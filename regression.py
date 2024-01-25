@@ -44,7 +44,7 @@ def fit_regression_model(X, y):
 
     for epoch in range(1, num_epochs):
         loss = train_iteration(X, y, model, loss_fn, optimizer)
-        if abs(previos_loss - loss.item()) < 1e-6:# Change this condition to stop the training when the loss is not changing much.
+        if False:# Change this condition to stop the training when the loss is not changing much.
             break
         previos_loss = loss.item()
         # This is a good place to print the loss every 1000 epochs.
